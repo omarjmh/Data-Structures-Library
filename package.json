@@ -1,0 +1,24 @@
+{
+  "name": "dslib",
+  "version": "1.0.0",
+  "description": "data structures in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarjmh/Data-Structures-Library.git"
+  },
+  "author": "ohs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omarjmh/Data-Structures-Library/issues"
+  },
+  "homepage": "https://github.com/omarjmh/Data-Structures-Library#readme",
+  "dependencies": {
+    "chai": "^3.4.1",
+    "karma": "^0.13.19",
+    "mocha": "^2.3.4"
+  }
+}
