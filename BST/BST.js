@@ -6,12 +6,10 @@ class Node {
       this.left = null;
   }
 }
-
 class BinarySearchTree {
   constructor(value) {
       this._root = new Node(value);
   }
-
   add(value) {
     let node = new Node(value);
     if (this._root === null) {
