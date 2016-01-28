@@ -35,7 +35,17 @@ BinarySearchTree.prototype.postOrder = function(current, callback) {
   }
 };
 
+var l = console.log;
+var t = new BinarySearchTree(50);
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+for (var i = 0; i < 25; i++) {
+  t.add(getRandomInt(1,45))
+};
 
+
+t.postOrder(t, function(a) {l(a)})
 
 
 
