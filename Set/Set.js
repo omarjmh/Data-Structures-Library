@@ -1,11 +1,9 @@
 "use strict"
 
 class SetDataStructure {
-    
     constructor() {
         this._set = new Set()
     }
-
     add(...values) {
         values.forEach(value => {
             this._set.add(value);
