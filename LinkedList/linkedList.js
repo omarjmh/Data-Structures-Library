@@ -3,13 +3,13 @@ var LinkedList = function() {
   this.tail = null;
   this.values = [];
 };
-var Node = function(value) {
+var LLNode = function(value) {
   this.value = value;
   this.next = null;
 
 };
 LinkedList.prototype.addToTail = function(value) {
-  var node = new Node(value);
+  var node = new LLNode(value);
   if (!this.head) {
     this.head = node;
     this.values.push(value);
@@ -21,7 +21,7 @@ LinkedList.prototype.addToTail = function(value) {
   this.tail = node;
 };
 LinkedList.prototype.removeHead = function() {
-  var value = this.head;
+  var value = this.head.value;
   this.head = this.head.next;
   return value;
 };

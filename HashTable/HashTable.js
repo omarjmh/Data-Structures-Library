@@ -71,8 +71,3 @@ class HashTable {
 
   }
 }
-
-let l = console.log;
-let h = new HashTable();
-h.insert('omar', 'sial');
-l(h.retrieve('omar'));

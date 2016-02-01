@@ -4,6 +4,9 @@ var expect = chai.expect;
 
 describe('Tree', function () {
   it('should exist', function(){
+      beforeEach(function() {
+    tree = Tree();
+  });
     // Oh no! the `Tree` class doesn't exist but it was provided for you. Maybe
     // you deleted the code that defines the class by mistake?
     should.exist(Tree);

@@ -44,9 +44,3 @@ class PrefixTree {
     
   }
 }
-
-let l = console.log;
-var p = new PrefixTree();
-p.add('omar');
-p.add('omari');
-l(p.contains('omae'))
