@@ -17,13 +17,7 @@
   },
   "homepage": "https://github.com/omarjmh/Data-Structures-Library#readme",
   "dependencies": {
-    "babel": "^6.3.26",
-    "chai": "^3.4.1",
-    "jquery": "^2.2.0",
-    "mocha": "^2.3.4",
-    "require": "^2.4.20",
-    "requirejs": "^2.1.22",
-    "underscore": "^1.8.3"
+    "babel": "^6.3.26"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
