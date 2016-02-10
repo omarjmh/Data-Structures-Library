@@ -4,25 +4,31 @@ var c = [100,0,4,200,0,1,0,3,2];
 
 var l = console.log;
 
-var moveZeroes = function(nums) {
-    var zeros = nums.filter(function(a) {return a === 0;});
-    var other = nums.filter(function(a) {return a !== 0;});
-    var t =  other.concat(zeros);
-    return t;
+var bubbleSort = function(array) {
+  array.forEach(function(a, i) {
+    var first = a;
+    var second = array[i + 1];
+    if (second && first > second) {
+      array[i] = second;
+      array[i + 1] = first;
+      l(array)
+      bubbleSort(array);
+    }
+  })
 };
 
-var moveZeroesInPlace = function(nums) {
-  for (var i = 0; i < nums.length - 1; i++) {
-    var first = nums[i];
-    var next = nums[i + 1];
-    if (first === 0 && first !== next) {
-      nums[i] = next;
-      nums[i + 1] = first;
-      moveZeroesInPlace(nums);
-    }
+
+/*
+  for (var i = 0; i < array.length; i++) {
+    var first = array[i];
+    var second = array[i + 1];
+    if (first > second) {
+      array[i] = second;
+      array[i + 1] = first;
+      bubbleSort(array);
+    } 
   }
-  return nums;
-}
-l(moveZeroesInPlace(a));
-l(moveZeroesInPlace(b));
-l(moveZeroesInPlace(c));
+ */
+var arr = [5,2,3,4,1];
+l(bubbleSort(arr))
+l(arr)
