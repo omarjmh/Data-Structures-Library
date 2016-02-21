@@ -11,24 +11,25 @@ var bubbleSort = function(array) {
     if (second && first > second) {
       array[i] = second;
       array[i + 1] = first;
-      l(array)
       bubbleSort(array);
     }
   })
 };
 
+// var bubbleSort = function(array) {
+//   for (var i = 0; i < array.length; i++) {
+//     var first = array[i];
+//     var second = array[i + 1];
+//     if (first > second) {
+//       array[i] = second;
+//       array[i + 1] = first;
+//       bubbleSort(array);
+//     } 
+//   }
+// };
 
-/*
-  for (var i = 0; i < array.length; i++) {
-    var first = array[i];
-    var second = array[i + 1];
-    if (first > second) {
-      array[i] = second;
-      array[i + 1] = first;
-      bubbleSort(array);
-    } 
-  }
- */
+
+
 var arr = [5,2,3,4,1];
 l(bubbleSort(arr))
 l(arr)
